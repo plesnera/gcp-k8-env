@@ -1,6 +1,6 @@
 FROM google/cloud-sdk
 
-WORKDIR /usr/local
+WORKDIR /usr
 RUN curl -o bin/kustomize -L https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v3.2.1/kustomize_kustomize.v3.2.1_linux_amd64 &&\
 	chmod 777 /usr/local/bin/kustomize
 RUN curl -o bin/yq  -L https://github.com/mikefarah/yq/releases/download/3.2.3/yq_linux_386 && chmod 777 bin/yq

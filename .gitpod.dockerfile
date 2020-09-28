@@ -9,5 +9,4 @@ WORKDIR /tmp
 RUN curl -OL https://storage.googleapis.com/gke-release/asm/istio-1.4.10-asm.15-linux.tar.gz && tar -xf istio-1.4.10-asm.15-linux.tar.gz -C /opt && ln -s /opt/istio-1.4.10-asm.15/bin/* -t bin/
 RUN chmod 755 /usr/bin/* 
 WORKDIR ~
-RUN export PATH=$PATH:/usr/local/bin
-VOLUME ["/root/.config"]
+RUN export PATH=$PATH:/usr/bin
